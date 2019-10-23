@@ -5,3 +5,4 @@ function setup_bible_verses {
 }
 
 setup_bible_verses
+export BIBLE_DAILY_VERSE=0

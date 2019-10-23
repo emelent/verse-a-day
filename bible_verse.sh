@@ -11,7 +11,7 @@ function daily_verse {
     print_verse $data
 }
 
-function print_verse {
+function display_verse {
     # clear grep options just incase, use alias instead
     GREP_OPTIONS=
     alias grep="grep --color=auto"
@@ -26,9 +26,9 @@ function print_verse {
     echo -e "\n\033[0;34m$ref ($vsn)\033[0m\n" | pr -to5
 }
 
-
-# output Bible verse of the day
-#daily_verse
-
-# output a random Bible verse
-random_verse
+function print_verse {
+    [ $BIBLE_DAILY_VERSE -eq 1 ] &&
+        daily_verse ||
+        random_verse -eq 1
+}
+print_verse
