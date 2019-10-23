@@ -3,6 +3,8 @@
 This is a small script that's run in your `~/.bashrc` to show a random bible verse
 each time you open the terminal.
 
+![alt shell screenshot](./screenshot.png)
+
 ### Install
 
 Simply copy and paste this in your terminal
