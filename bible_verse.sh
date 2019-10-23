@@ -3,12 +3,13 @@
 function random_verse {
     ping -q -w1 -c1 google.com &>/dev/null &&
         data=`curl -s https://beta.ourmanna.com/api/v1/get\?format\=json\&order\=random` &&
-        print_verse $data
+        display_verse $data
     }
 
 function daily_verse {
-    data=`curl -s https://beta.ourmanna.com/api/v1/get\?format\=json`
-    print_verse $data
+    ping -q -w1 -c1 google.com &>/dev/null &&
+        data=`curl -s https://beta.ourmanna.com/api/v1/get\?format\=json`
+        display_verse $data
 }
 
 function display_verse {
