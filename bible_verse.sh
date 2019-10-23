@@ -2,13 +2,13 @@
 
 function random_verse {
     ping -q -w1 -c1 google.com &>/dev/null &&
-        data=`curl -s https://beta.ourmanna.com/api/v1/get\?format\=json\&order\=random` &&
+        data=$(curl -s https://beta.ourmanna.com/api/v1/get\?format\=json\&order\=random) &&
         display_verse $data
     }
 
 function daily_verse {
     ping -q -w1 -c1 google.com &>/dev/null &&
-        data=`curl -s https://beta.ourmanna.com/api/v1/get\?format\=json`
+        data=$(curl -s https://beta.ourmanna.com/api/v1/get\?format\=json)
         display_verse $data
 }
 
