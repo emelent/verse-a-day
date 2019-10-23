@@ -14,8 +14,8 @@ Simply copy and paste this in your terminal
 
 If you wanna install it manually simply add the contents of the `bashrc` file
 to your own `~/.bashrc`. This is best suited if you're using another shell
-which is based on *bash*, like *zsh*, in which case you would add the contents to
-your `~/.zshrc`.
+that is based on **bash**, you would add this to your shell's rc file, this would
+be `~/.zshrc` for  **zsh**.
 
 ### Configuration
 
