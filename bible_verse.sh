@@ -27,8 +27,9 @@ function display_verse {
 }
 
 function print_verse {
-    [ $BIBLE_DAILY_VERSE -eq 1 ] &&
-        daily_verse ||
-        random_verse -eq 1
+    [ "$BIBLE_DAILY_VERSE" != "1" ] &&
+        random_verse ||
+        daily_verse
 }
+
 print_verse
