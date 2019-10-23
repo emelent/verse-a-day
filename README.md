@@ -7,7 +7,7 @@ each time you open the terminal.
 
 Simply copy and paste this in your terminal
 
-    curl https://raw.githubusercontent.com/emelent/verse-a-day/master/install.sh | bash
+    curl https://raw.githubusercontent.com/emelent/verse-a-day/master/install.sh | sh
 
 
 ### Manual Install
