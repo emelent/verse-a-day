@@ -1,6 +1,4 @@
-#Verse A Day
-
-### Introduction
+## Verse A Day
 
 This is a small script that's run in your `~/.bashrc` to show a random bible verse
 each time you open the terminal.
@@ -8,6 +6,7 @@ each time you open the terminal.
 ### Install
 
 Simply copy and paste this in your terminal
+
     curl https://raw.githubusercontent.com/emelent/verse-a-day/master/install.sh | bash
 
 
